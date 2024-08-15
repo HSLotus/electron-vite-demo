@@ -3,9 +3,7 @@ import test from './components/test.vue'
 </script>
 
 <template>
-
   <test />
-
 </template>
 
 <style>

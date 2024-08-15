@@ -75,12 +75,12 @@ export default defineConfig(({ command }) => {
       // host:'0.0.0.0',
       proxy: {
         '/api': {
-          target: 'URL',
+          target: 'https://weread.qq.com/web/',
           changeOrigin: true,
           // secure: true,
           // ws: true,
           // 如果目标api的样式不是 URL/api/xxx，那么需要重写/api
-          // rewrite: (path) => path.replace(/^\/api/, '')
+          rewrite: (path) => path.replace(/^\/api/, '')
         }
       }
     },
